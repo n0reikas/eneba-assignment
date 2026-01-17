@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-width: 0px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+body {
+    background-color: #4719ac;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.regular {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: #b3aac9;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items:flex-start;
+    justify-content: center;
+    background-color: #4719ac;
+    color: white;
+    font-family: 'Metropolis', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    min-height: 55px;
+}
+
+.logo-link {
+    display: block;
+    max-width: 155px;
+    min-width: 155px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 20px;
+}
+
+.searchbar-container {
+    display: flex;
+    flex: 0 1 550px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid white;
+    margin: 0 20px;
+}
+
+.search-bar {
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    font-size: 1.4em;
+    color: #fff;
+    border: 0;
+    font-family: 'Metropolis', sans-serif;
+    padding: 20px 0;
+}   
+
+.search-icon {
+    width: 40px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.search-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-search-button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+    padding: 5px 16px;
+    color: #b3aac9;
+}
+
+.locale-container {
+    margin-right: auto;
+}
+
+.locale-button {
+    font-family: 'Metropolis', sans-serif;
+    display: flex;
+    border: none;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+}
+
+.nav-button-container {
+    display: flex;
+    height: 100%;
+    flex: 0 0 auto;
+}
+
+.wishlist, .cart, .account {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.shopping-cart-icon {
+    min-width: 24px;
+    max-width: 24px;
+    height: auto;
+}
+
+.account-icon {
+    border: 1.5px solid white;
+    border-radius: 100px;
+}
+
+.results-header {
+    padding: 20px 0;
+}
+
+.item-grid {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-gap: 20px;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #1e0a4c;
+}
+
+.platform-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -22px;
+    left: 0;
+    height: 22px;
+    gap: 5px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,.55);
+    opacity: 1;
+}
+
+.platform-overlay img {
+    width: 16px;
+    height: 16px;
+}
+
+.platform-text {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.85);
+}
+
+.cashback {
+    border: 1px solid #63e3c2;
+}
+
+.item-card-text {
+    position: relative;
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cashback-label {
+    position: absolute;
+    display: flex;
+    background-color: #63e3c2;
+    color: #1f0a4d;
+    top: -60px;
+    left: 0;
+    padding: 7px 5px;
+    gap: 5px;
+    align-items: center;
+}
+
+.cashback-text {
+    
+}
+
+.item-card-price {
+    padding-top: 10px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.item-title {
+    padding-bottom: 10px;
+}
+
+.item-region {
+    padding-bottom: 10px;
+    color: #23c299;
+}
+
+.item-likes {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-top: 10px;
+    color: rgba(255,255,255,0.7)
+}
+
+.highlight {
+    color: #85e816;
+}
+
+.item-card-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.item-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.secondary {
+    color: #b3aac9;
+}

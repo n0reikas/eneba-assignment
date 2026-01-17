@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url("./assets/fonts/metropolis-latin-600-normal.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url("./assets/fonts/metropolis-latin-700-normal.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url("./assets/fonts/metropolis-latin-500-normal.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: "Metropolis", sans-serif;
+}
