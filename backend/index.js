@@ -1,8 +1,5 @@
 /* eslint-env node */
-<<<<<<< HEAD
-=======
 
->>>>>>> ae8ba8bf32a666500feae3972dfea6983a39657e
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
