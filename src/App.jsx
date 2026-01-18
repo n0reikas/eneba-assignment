@@ -13,7 +13,7 @@ function App() {
   console.log(import.meta.env.VITE_API_URL);
 
   const fetchGames = (query = "") => {
-    fetch(`${import.meta.env.VITE_API_URL}=${query}`)
+    fetch(`${import.meta.env.VITE_API_URL}/list?search=${query}`)
     .then(res => res.json())
     .then(data => setGames(data))
     .catch(err => console.error(err));
