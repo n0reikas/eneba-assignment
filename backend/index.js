@@ -1,10 +1,9 @@
 /* eslint-env node */
-
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
 const app = express();
-const PORT = process.env.MYSQLPORT;
+const PORT = process.env.MYSQLPORT || 3000;
 const db = mysql.createPool({
     host: process.env.MYSQLHOST,
     user: process.env.MYSQLUSER,
@@ -28,6 +27,6 @@ app.get('/list', (req, res) => {
     );
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on http://${process.env.MYSQLHOST}:${PORT}`);
 });
