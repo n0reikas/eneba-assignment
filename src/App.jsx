@@ -12,7 +12,7 @@ function App() {
   const query = new URLSearchParams(location.search).get('search') || "";
 
   const fetchGames = (query = "") => {
-    fetch(`http://localhost:3000/list?search=${query}`)
+    fetch(`${process.env.API_URL}=${query}`)
     .then(res => res.json())
     .then(data => setGames(data))
     .catch(err => console.error(err));
