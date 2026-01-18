@@ -1,6 +1,4 @@
 /* eslint-env node */
-require('dotenv').config();
-
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
@@ -30,5 +28,5 @@ app.get('/list', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on http://${process.env.MYSQLHOST}:${PORT}`);
 });
