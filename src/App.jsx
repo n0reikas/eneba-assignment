@@ -10,6 +10,7 @@ function App() {
   const location = useLocation();
 
   const query = new URLSearchParams(location.search).get('search') || "";
+  console.log(process.env.API_URL);
 
   const fetchGames = (query = "") => {
     fetch(`${process.env.API_URL}=${query}`)
