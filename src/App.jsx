@@ -10,10 +10,10 @@ function App() {
   const location = useLocation();
 
   const query = new URLSearchParams(location.search).get('search') || "";
-  console.log(import.meta.env.API_URL);
+  console.log(import.meta.env.VITE_API_URL);
 
   const fetchGames = (query = "") => {
-    fetch(`${import.meta.env.API_URL}=${query}`)
+    fetch(`${import.meta.env.VITE_API_URL}=${query}`)
     .then(res => res.json())
     .then(data => setGames(data))
     .catch(err => console.error(err));
